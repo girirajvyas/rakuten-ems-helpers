@@ -1,0 +1,13 @@
+EmpId,Name,Department,Designation,Salary,JoiningDate
+1, Rubina Sharma, HR, Developer,200, 2018-10-20
+2, Parvati Coelho, Finance, Senior Developer,250, 2018-10-20
+3, Jaya Sims, HR, ceo,300, 2019-10/20
+4, Chetana Bhagat,Management,Manager,301, 2018-10-20
+5, Arun Roy,Trainee,Team Lead,302, 2018-10-21
+6, Gauri Kapoor,Java,VP,303, 2018-10-22
+7, Giri Vyas,BFS, Developer,304, 2018-10/23
+8, Amit Bachhan,Cinema, Senior Developer,305, 2018-10-24
+9, Anu Kashyap,Director, ceo,306, 2018-10-25
+10, Raghu, HR,Manager,307, 2018-10-26
+11,Hiranya,Management,Team Lead,308, 2018-10-27
+12,Siddham,Trainee,VP,309, 2018-10-28

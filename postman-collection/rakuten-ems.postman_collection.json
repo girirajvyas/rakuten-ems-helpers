@@ -1,0 +1,114 @@
+{
+	"variables": [],
+	"info": {
+		"name": "rakuten-ems",
+		"_postman_id": "b40ff278-6718-0ddb-b76e-178738225bba",
+		"description": "Collection to test FullStackRecruitmentTestApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Test Server is running",
+			"request": {
+				"url": "http://localhost:8080/test",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Test"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Upload Employee CSV file",
+			"request": {
+				"url": "localhost:8080/upload",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "3. Get All Employees(valid/errored)",
+			"request": {
+				"url": "http://localhost:8080/employees",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "4. Get All Valid(without error) Employees",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/employees?erroredRecord=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "erroredRecord",
+							"value": "false",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "5. Get errored Employees data",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/employees?erroredRecord=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "erroredRecord",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
