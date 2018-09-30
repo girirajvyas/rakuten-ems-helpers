@@ -5,7 +5,7 @@ Repository for non project related but trivial stuff
 You can find the complete setup of project below:
 
 # rakuten-ems
-Employee Management System(EMS) Spring Boot app
+Employee Management System(EMS) 
 
 # Run Project
 1. This project is part 3 of 3 repositories for rakuten-ems:  
