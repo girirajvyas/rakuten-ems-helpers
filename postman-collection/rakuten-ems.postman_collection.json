@@ -109,6 +109,59 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "6. Update employee by Id",
+			"request": {
+				"url": "http://localhost:8080/employees/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 3,\n        \"empId\": \"3\",\n        \"name\": \" Jay Sims\",\n        \"department\": \" HR\",\n        \"designation\": \" ceo\",\n        \"salary\": \" 350\",\n        \"joiningDate\": \" 2019-10-20\",\n        \"erroredRecord\": false\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "7. Get Employee by Id",
+			"request": {
+				"url": "http://localhost:8080/employees/3",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "john.doe",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jwtpass",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
